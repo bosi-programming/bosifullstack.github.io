@@ -1,19 +1,67 @@
 // TODO:
 // ! Create a nav with photo and links
 // ! Create a better visual for the projects
-$primaryColor: #387780;
-$secondColor: #D2CCA1;
-$thirdColor: #DBD4D3;
-$forthColor: #757780;
+$primaryColor: #B4CEB3;
+$secondColor: gray;
+$thirdColor: #DBD3C9;
+$forthColor: #88A0A8;
+$fifthColor: #546A76;
 
 %basicButton {
-    background-color: $secondColor;
-    color: $forthColor;
+    background-color: $primaryColor;
+    color: black;
     border: 1px solid black;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    border-radius: 10px;
 }
-main{
-    background-color: $thirdColor;
-    width: 80%;
+
+.project{
+    background-color: $forthColor;
+    width: 75%;
+    margin-right: 0;
+    margin-left: auto;
+    .project-list{
+        text-align: center;
+        .project-list__item{
+            display: inline-block;
+            width: 40%;
+            margin: 0 2em;
+            padding: 2em 0;
+            border-bottom: 2px solid $thirdColor;
+            .project-list__image{
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+            .project-list__button{
+                @extend %basicButton
+            }
+        }
+    }
+}
+
+.nav {
+    background-color: $secondColor;
+    width:25%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    border-right: 2px solid $thirdColor;
+    .pic{
+        margin-top: 2em;
+        width: 60%;
+        height: auto;
+        border-radius: 10px ;
+    }
+    .nav__description {
+        padding: 0 2em;
+        color: white;
+    }
+    .nav__link {
+        @extend %basicButton;
+        width: 60%;
+        margin: 1em;
+    }
 }

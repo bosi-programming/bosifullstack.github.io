@@ -1,6 +1,55 @@
-main {
-  background-color: #DBD4D3;
-  width: 80%;
+.nav .nav__link, .project .project-list .project-list__item .project-list__button {
+  background-color: #B4CEB3;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.project {
+  background-color: #88A0A8;
+  width: 75%;
+  margin-right: 0;
+  margin-left: auto;
+}
+.project .project-list {
+  text-align: center;
+}
+.project .project-list .project-list__item {
+  display: inline-block;
+  width: 40%;
+  margin: 0 2em;
+  padding: 2em 0;
+  border-bottom: 2px solid #DBD3C9;
+}
+.project .project-list .project-list__item .project-list__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.nav {
+  background-color: gray;
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  border-right: 2px solid #DBD3C9;
+}
+.nav .pic {
+  margin-top: 2em;
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+.nav .nav__description {
+  padding: 0 2em;
+  color: white;
+}
+.nav .nav__link {
+  width: 60%;
+  margin: 1em;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -14,11 +14,14 @@ export class ProjectsList extends Component {
 
     render() {
         return (
-            <ul className="projects-list">
-                {this.state.projects.map(p => (
-                    <ProjectItem project={p} />
-                ))}
-            </ul>
+            <article className="project">
+                <div className="project-list">
+                    {this.state.projects.map(p => (
+                        <ProjectItem project={p} />
+                    ))}
+                </div>
+            </article>            
+
         )
     }
 }
