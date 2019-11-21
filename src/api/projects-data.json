@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Site Chen Tai Chi Brasil",
+            "image": "chenTaiChi.jpg",
+            "link": "https://https://chentaichibrasil.com/",
+            "description": "Site em Wordpress feito para a organização Chen Tai Chi Brasil."
+        },
+        {
+            "id": 2,
+            "name": "Tea startpage",
+            "image": "teaStartpage.jpg",
+            "link": "https://bosiarquitetura.github.io/startpage/",
+            "description": "Startpage PWA feita somente com HTML, CSS e JavaScript. Voltada para os fãs de chá e programadores."
+        },
+        {
+            "id": 3,
+            "name": "Fake Store",
+            "image": "fakeStore.jpg",
+            "link": "https://bosiarquitetura.github.io/fakeStore/",
+            "description": "Loja falsa online feita em React, Redux e SASS."
+        },
+        {
+            "id": 4,
+            "name": "Cotações API",
+            "image": "cotacoes.jpg",
+            "link": "https://cotacoes-curso.herokuapp.com/",
+            "description": "Aplicativo feito em Node.js que busca dados reais e atualizados sobre ações em bolsas de valores do mundo todo."
+        },
+        {
+            "id": 5,
+            "name": "ToDo-CLI",
+            "image": "todoCLI.jpg",
+            "link": "https://github.com/bosiarquitetura/ToDo-CLI",
+            "description": "Aplicação CLI que gerencia lista de tarefas"
+        },
+        {
+            "id": 6,
+            "name": "Python games",
+            "image": "pygames.png",
+            "link": "https://github.com/bosiarquitetura/pythonGames",
+            "description": "Coleção de jogos feitos me Python"
+        }
+    ]
+}
