@@ -1,15 +1,22 @@
 <template>
-  <b-container>
+  <article class="container">
     <div class="lists">
-    <ul class="nes-list is-circle">
-      <li class="lists__point"><a class="lists__link" href="https://github.com/bosifullstack/startpage">StartPage</a></li>
-      <p class="lists__text"> A PWA StartPage made with HTML, CSS and JS</p>
-      <li>Thou hast had a good night's sleep, I hope.</li>
-      <li>Thou hast had a good afternoon</li>
-      <li>Good night.</li>
-    </ul>
-  </div>
-  </b-container>
+      <h1 class="lists__title">{{ title }}</h1>
+      <p class="lists__description">
+        {{ description }}
+      </p>
+      <ul class="nes-list is-circle">
+        <li v-for="(item, i) in items" :key="`${i}-${item}`" class="lists__point">
+          <a class="lists__link" :href="item.link" target="_blank" rel="noopener noreferrer">
+            {{ item.title }}
+          </a>
+          <p class="lists__text"> 
+            {{ item.description }}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </article>
 </template>
 
 <script lang="ts">
@@ -17,12 +24,22 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Lists extends Vue {
-
+  @Prop(String) private title!: string;
+  @Prop(String) private description!: string;
+  @Prop(Array) private items!: Array<object>;
 }
 </script>
 
 <style lang="scss">
 .lists {
+  padding: 45px 0;
+  &__title {
+    padding-bottom: 30px;
+  }
+  &__description {
+    padding-bottom: 15px;
+  }
+
   &__point {
     text-align: left;
   }

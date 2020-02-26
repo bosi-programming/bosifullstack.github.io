@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <div class="nes-container is-dark message" :class="withTitle">
+    <div class="container nes-container is-dark message" :class="withTitle">
       <p class="title message__title">{{ title }}</p>
       <p class="message__text">{{ text }}</p>
     </div>
