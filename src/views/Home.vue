@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <Message title="Felipe Azevedo Bosi" text="Fullstack developer specialized in solutions for educational systems." />
+    <Message title="Felipe Azevedo Bosi" text="Frontend developer specialized in solutions for educational and health care systems." />
     <b-container class="social">
       <b-row>
 
