@@ -80,7 +80,7 @@
 
   const frameworks: starType[] = [
     {
-      title: "String Boot",
+      title: "Spring Boot",
       stars: 3,
     },
     {
